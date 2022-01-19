@@ -1,7 +1,7 @@
-#args=commandArgs(TRUE)
-#vpat=args[1]
-#vopat=args[2]
-#print("Please give raw_dirctory_path and output_path.")
+args=commandArgs(TRUE)
+vpat=args[1]
+vopat=args[2]
+print("Please give raw_dirctory_path and output_path.")
 
 # pat,frame,scale,outpat
 PicassoOfFrames=function(pat,frames,scale,
@@ -89,8 +89,8 @@ cat(paste0("WideField image from ",wfFile," and ",wforiFile," was scaled to ",sc
 }
 
 
-# frames=30000
-# PicassoOfFrames(pat=vpat,frame=frames,scale=16,outpat=vopat,throw=0.01)
+frames=30000
+PicassoOfFrames(pat=vpat,frame=frames,scale=16,outpat=vopat,throw=0.01)
 frames=c(10,100,1000,3000)
 startframes=c(0,5000,10000,15000,20000,25000)
 PicassoOfFrames(pat=vpat,startfs=startframes,frames=frames,scale=16,outpat=vopat)
