@@ -61,9 +61,9 @@ startcount=1){
 
 grid_x=256
 grid_y=grid_x
-pat="/media/chin/Chin/ExpData/ExpdataTemp/格式化/ToLHJ/data/20220113/Uncut/COS-7-1nMCy3B-sphere-Deoxy-2"
-out="/media/chin/Chin/ExpData/ExpdataTemp/格式化/ToLHJ/data/20220113/Cut/COS-7-1nMCy3B-sphere-Deoxy-2"
-startcount=1770
+pat=""
+out=""
+startcount=1
 
-    startcount=1+Roiselectcut(pat=file.path(pat),grid_x=256,grid_y=256,start_x=grid_x/4+1,start_y=grid_y/4+1,outpat=out,startcount=startcount)
+    startcount=1+Roiselectcut(pat=file.path(pat),grid_x=grid_x,grid_y=grid_y,start_x=grid_x/4+1,start_y=grid_y/4+1,outpat=out,startcount=startcount)
 
